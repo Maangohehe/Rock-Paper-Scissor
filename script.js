@@ -1,6 +1,6 @@
-let game = (player_selec, comp_selec) => playRound(player_selec, comp_selec); 
+let game = (player_selec, comp_selec) => playRound(player_selec, comp_selec); //the game function
 
-function playRound(playerSelection, computerSelection)
+function playRound(playerSelection, computerSelection)//meow
 {
     if(playerSelection == "rock" && computerSelection == "paper")
     {
@@ -40,15 +40,15 @@ function playRound(playerSelection, computerSelection)
     }
 }
 
-function playerPlay()
+function playerPlay()//function to select player choice
 {
     let i = 0;
-    while(i!=1)
+    while(i!=1)//if choice is wrong the loop will continue, else it breaks
     {
         let choice = prompt("Type any three: Rock, Paper, Scissors ", );
-        choice = choice.toLowerCase();
+        choice = choice.toLowerCase(); // generalizes the choice to lower case
         console.log(choice);
-        switch(choice)
+        switch(choice)//helps in taking case sensitive input
         {
             case "rock":
                 i++;
